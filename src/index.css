@@ -5,4 +5,44 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+  background-color: #fef3e9;
+}
+
+.logoImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  height: 12rem;
+}
+
+.searchInput {
+  
+  width: 20rem;
+  height: 2.5rem;
+  padding-left: 0.7rem;
+  font-size: 1.2rem;
+  border: 2px solid #22333c;
+  border-radius: 12px;
+  background-color: #fef3e9;
+}
+
+.searchResult {
+  
+}
+
+.searchButton{
+  
+  width: 4rem;
+  height: 2.5rem;
+  border: 2px solid #22333c;
+  border-radius: 12px;
+  background-color: #fef3e9;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.searchButton:hover{
+  background-color: #22333c;
+  color: #fef3e9;
 }
