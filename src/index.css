@@ -15,33 +15,3 @@ body {
   margin-top: 6rem;
   height: 12rem;
 }
-
-.searchInput {
-  
-  width: 20rem;
-  height: 2.5rem;
-  padding-left: 0.7rem;
-  font-size: 1.2rem;
-  border: 2px solid #22333c;
-  border-radius: 12px;
-  background-color: #fef3e9;
-}
-
-.resultTitle{
-  list-style: none;
-}
-
-.resultCity{
-  list-style: none;
-}
-
-.searchButton{
-  
-  width: 4rem;
-  height: 2.9rem;
-  border: 2px solid #22333c;
-  border-radius: 12px;
-  background-color: #fef3e9;
-  font-size: 1.2rem;
-  cursor: pointer;
-}

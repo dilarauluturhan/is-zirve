@@ -32,7 +32,7 @@
     {
         "id": 7,
         "title": "Frontend Developer",
-        "city": "İstanbul"
+        "city": "İzmir"
     },
     {
         "id": 8,
@@ -62,6 +62,41 @@
     {
         "id": 13,
         "title": "Fullstack Developer",
+        "city": "Çanakkale"
+    },
+    {
+        "id": 14,
+        "title": "JavaScript Developer",
+        "city": "İstanbul"
+    },
+    {
+        "id": 15,
+        "title": "Angular Developer",
+        "city": "İzmir"
+    },
+    {
+        "id": 16,
+        "title": "Reactjs Developer",
+        "city": "Bolu"
+    },
+    {
+        "id": 17,
+        "title": "Vuejs Developer",
+        "city": "Muğla"
+    },
+    {
+        "id": 18,
+        "title": "Java Developer",
+        "city": "İstanbul"
+    },
+    {
+        "id": 19,
+        "title": "PHP Developer",
+        "city": "Ankara"
+    },
+    {
+        "id": 20,
+        "title": ".Net Developer",
         "city": "Çanakkale"
     }
 ]
