@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import JSONJOBS from './db.json';
+import JSONJOBS from '../db.json';
 
 function SearchBar() {
     const [value, setValue] = useState('');

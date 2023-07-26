@@ -1,11 +1,16 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SearchBar from './pages/SearchBar';
+import JobList from './pages/JobList';
 
 function App() {
   return (
-    <>
-      <SearchBar />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<SearchBar />} />
+        <Route path='/joblist' element={<JobList />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
