@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+@keyframes animationLeftRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes animationRightLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 ul {
   list-style: none;
   text-align: center;
@@ -23,7 +46,7 @@ ul li {
 }
 
 .search-input {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   padding: 8px 16px;
   width: 30rem;
@@ -40,7 +63,7 @@ ul li {
   border-radius: 7px;
   background-color: #22333c;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgb(84, 105, 212) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.3rem;
   font-weight: 700;
   cursor: pointer;
@@ -48,8 +71,8 @@ ul li {
 }
 
 .search-button:hover {
-  background-color: #fff;
-  color: #212d63;
+  background-color: #ffffff;
+  color: #22333c;
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -60,7 +83,7 @@ ul li {
   width: 10rem;
   text-decoration: none;
   color: #22333c;
-  font-size: 1.2rem;
+  font-size: font-size-morejobs-button;
   border: 1px solid #22333c;
   padding: 0.5rem 1rem;
   border-radius: 7px;
@@ -71,7 +94,7 @@ ul li {
   background-color: #22333c;
 }
 
-.login-root {
+.root {
   background: #EEEDED;
   display: flex;
   width: 100%;
@@ -169,27 +192,4 @@ ul li {
 
 .tans4s {
   animation: animationLeftRight 4s ease-in-out infinite;
-}
-
-@keyframes animationLeftRight {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(1000px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes animationRightLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
 }/*# sourceMappingURL=searchbar.css.map */

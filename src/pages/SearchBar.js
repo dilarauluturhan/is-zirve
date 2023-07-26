@@ -58,7 +58,7 @@ function SearchBar() {
                         </div>
                     </div>
             </header>
-            <main className='login-root'>
+            <main className='root'>
                 <div className='loginbackground'>
                 <h1 className='header'>işZirve</h1>
                     <div className='search'>

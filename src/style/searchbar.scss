@@ -1,3 +1,7 @@
+@import '_variables';
+@import '_mixins';
+@import '_keyframes';
+
 ul {
     list-style: none;
     text-align: center;
@@ -7,14 +11,14 @@ ul {
     li {
         display: inline-block;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: $font-size-li;
     }
 }
 
 .header {
     text-align: center;
-    color: #22333c;
-    font-size: 8rem;
+    color: $color-base;
+    font-size: $font-size-header;
     font-weight: 900;
 }
 
@@ -25,46 +29,34 @@ ul {
 }
 
 .search-input {
-    font-size: 16px;
+    font-size: $font-size-input;
     line-height: 28px;
     padding: 8px 16px;
     width: 30rem;
     height: 1.7rem;
     border-radius: 7px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    outline-color: $color-input-outline;
+    background-color: $color-input-background;
+    box-shadow: $color-input-shadow;
 }
 
 .search-button {
     width: 3.5rem;
     height: 2.9rem;
     border-radius: 7px;
-    background-color: #22333c;
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-        rgb(84, 105, 212) 0px 0px 0px 1px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-    color: #fff;
-    font-size: 1.3rem;
+    background-color: $color-base;
+    box-shadow: $color-search-button-shadow;
+    color: $color-white;
+    font-size: $font-size-search-button;
     font-weight: 700;
     cursor: pointer;
     margin-left: 10px;
 }
 
 .search-button:hover {
-    background-color: #fff;
-    color: #212d63;
-    font-size: 1.3rem;
+    background-color: $color-white;
+    color: $color-base;
+    font-size: $font-size-li;
     font-weight: 700;
 }
 
@@ -74,20 +66,20 @@ ul {
     left: 46%;
     width: 10rem;
     text-decoration: none;
-    color: #22333c;
-    font-size: 1.2rem;
+    color: $color-base;
+    font-size: font-size-morejobs-button;
     border: 1px solid #22333c;
     padding: 0.5rem 1rem;
     border-radius: 7px;
 }
 
 .moreJobs:hover {
-    color: #ffffff;
-    background-color: #22333c;
+    color: $color-white;
+    background-color: $color-base;
 }
 
-.login-root {
-    background: #EEEDED;
+.root {
+    background: $color-root-background;
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -127,23 +119,23 @@ ul {
 }
 
 .box-divider--light-all-2 {
-    box-shadow: inset 0 0 0 2px #e3e8ee;
+    box-shadow: inset 0 0 0 2px $box-divider--light-all-2;
 }
 
 .box-background--blue {
-    background-color: #5469d4;
+    background-color: $box-background--blue;
 }
 
 .box-background--white {
-    background-color: #ffffff;
+    background-color: $color-white;
 }
 
 .box-background--blue800 {
-    background-color: #212d63;
+    background-color: $box-background--blue800;
 }
 
 .box-background--gray100 {
-    background-color: #e3e8ee;
+    background-color: $box-background--gray100;
 }
 
 .padding-top--64 {
@@ -190,32 +182,4 @@ ul {
 
 .tans4s {
     animation: animationLeftRight 4s ease-in-out infinite;
-}
-
-@keyframes animationLeftRight {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(1000px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes animationRightLeft {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(-1000px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
 }
