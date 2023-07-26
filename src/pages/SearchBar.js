@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import JSONJOBS from '../db.json';
+import '../style/searchbar.css';
 
 function SearchBar() {
     const [value, setValue] = useState('');
@@ -15,7 +17,6 @@ function SearchBar() {
     return (
         <div>
             <header>
-                
                     <div class="flex-flex flex-direction--column" style={{ minHeight: "100vh", flexGrow: "1" }}>
                         <div class="loginbackground box-background--white padding-top--64">
                             <div class="loginbackground-gridContainer">
@@ -56,7 +57,6 @@ function SearchBar() {
                             </div>
                         </div>
                     </div>
-                
             </header>
             <main className='login-root'>
                 <div className='loginbackground'>
@@ -89,10 +89,11 @@ function SearchBar() {
                                     <ul className='jobList'>
                                         <li>{jobs.title}</li>
                                         <li>{jobs.city}</li>
+                                        <li>{jobs.date}</li>
                                     </ul>
                                 </div>
                             ))}
-                        <a className='moreJobs' href='#\'>Daha fazla...</a>
+                        <Link className='moreJobs' to='/joblist'>Daha fazla...</Link>
                     </div>
                 </div>
             </main>

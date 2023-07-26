@@ -2,101 +2,121 @@
     {
         "id": 1,
         "title": "Frontend Developer",
-        "city": "İstanbul"
+        "city": "İstanbul",
+        "date": "07/2023"
     },
     {
         "id": 2,
         "title": "Backend Developer",
-        "city": "Ankara"
+        "city": "Ankara",
+        "date": "06/2023"
     },
     {
         "id": 3,
         "title": "IOS Developer",
-        "city": "Antalya"
+        "city": "Antalya",
+        "date": "07/2023"
     },
     {
         "id": 4,
         "title": "Android Developer",
-        "city": "İstanbul"
+        "city": "İstanbul",
+        "date": "05/2023"
     },
     {
         "id": 5,
         "title": "Reactjs Developer",
-        "city": "İstanbul"
+        "city": "İstanbul",
+        "date": "07/2023"
     },
     {
         "id": 6,
         "title": "Backend Developer",
-        "city": "Balıkesir"
+        "city": "Balıkesir",
+        "date": "08/2023"
     },
     {
         "id": 7,
         "title": "Frontend Developer",
-        "city": "İzmir"
+        "city": "İzmir",
+        "date": "09/2023"
     },
     {
         "id": 8,
         "title": "Fullstack Developer",
-        "city": "Isparta"
+        "city": "Isparta",
+        "date": "07/2023"
     },
     {
         "id": 9,
         "title": "Backend Developer",
-        "city": "Denizli"
+        "city": "Denizli",
+        "date": "07/2023"
     },
     {
         "id": 10,
         "title": "Frontend Developer",
-        "city": "Aydın"
+        "city": "Aydın",
+        "date": "10/2023"
     },
     {
         "id": 11,
         "title": "Android Developer",
-        "city": "Muğla"
+        "city": "Muğla",
+        "date": "07/2023"
     },
     {
         "id": 12,
         "title": "IOS Developer",
-        "city": "İzmir"
+        "city": "İzmir",
+        "date": "06/2023"
     },
     {
         "id": 13,
         "title": "Fullstack Developer",
-        "city": "Çanakkale"
+        "city": "Çanakkale",
+        "date": "07/2023"
     },
     {
         "id": 14,
         "title": "JavaScript Developer",
-        "city": "İstanbul"
+        "city": "İstanbul",
+        "date": "08/2023"
     },
     {
         "id": 15,
         "title": "Angular Developer",
-        "city": "İzmir"
+        "city": "İzmir",
+        "date": "07/2023"
     },
     {
         "id": 16,
         "title": "Reactjs Developer",
-        "city": "Bolu"
+        "city": "Bolu",
+        "date": "07/2023"
     },
     {
         "id": 17,
         "title": "Vuejs Developer",
-        "city": "Muğla"
+        "city": "Muğla",
+        "date": "09/2023"
     },
     {
         "id": 18,
         "title": "Java Developer",
-        "city": "İstanbul"
+        "city": "İstanbul",
+        "date": "08/2023"
     },
     {
         "id": 19,
         "title": "PHP Developer",
-        "city": "Ankara"
+        "city": "Ankara",
+        "date": "08/2023"
     },
     {
         "id": 20,
         "title": ".Net Developer",
-        "city": "Çanakkale"
+        "city": "Çanakkale",
+        "date": "07/2023"
     }
 ]
