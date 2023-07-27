@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
 body {
+  /* tarayıcılar arası uyumsuzluk olmasın diye */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
-  background-color: #EEEDED;
-  min-height: 100%;
 }

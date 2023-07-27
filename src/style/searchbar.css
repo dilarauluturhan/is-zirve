@@ -57,7 +57,6 @@ ul li {
   font-size: 1.3rem;
   font-weight: 700;
   cursor: pointer;
-  margin-left: 10px;
 }
 .search .search-button:hover {
   background-color: #ffffff;
@@ -66,7 +65,7 @@ ul li {
   font-weight: 700;
 }
 
-.moreJobs {
+.more-jobs {
   position: relative;
   left: 46%;
   width: 10rem;
@@ -77,7 +76,7 @@ ul li {
   padding: 0.5rem 1rem;
   border-radius: 7px;
 }
-.moreJobs:hover {
+.more-jobs:hover {
   color: #ffffff;
   background-color: #22333c;
 }

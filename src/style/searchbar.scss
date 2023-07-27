@@ -2,71 +2,9 @@
 @import '_mixins';
 @import '_keyframes';
 
-ul {
-    list-style: none;
-    text-align: center;
-
-    li {
-        display: inline-block;
-        text-align: left;
-        font-size: $font-size-li;
-    }
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .search-input {
-        font-size: $font-size-input;
-        line-height: 28px;
-        padding: 8px 16px;
-        width: 30rem;
-        height: 1.7rem;
-        border-radius: 7px;
-        outline-color: $color-input-outline;
-        background-color: $color-input-background;
-        box-shadow: $color-input-shadow;
-    }
-
-    .search-button {
-        width: 3.5rem;
-        height: 2.9rem;
-        border-radius: 7px;
-        background-color: $color-base;
-        box-shadow: $color-search-button-shadow;
-        color: $color-white;
-        font-size: $font-size-search-button;
-        font-weight: 700;
-        cursor: pointer;
-        margin-left: 10px;
-
-        &:hover {
-            background-color: $color-white;
-            color: $color-base;
-            font-size: $font-size-li;
-            font-weight: 700;
-        }
-    }
-}
-
-.moreJobs {
-    position: relative;
-    left: 46%;
-    width: 10rem;
-    text-decoration: none;
-    color: $color-base;
-    font-size: font-size-morejobs-button;
-    border: 1px solid $color-base;
-    padding: 0.5rem 1rem;
-    border-radius: 7px;
-
-    &:hover {
-        color: $color-white;
-        background-color: $color-base;
-    }
-}
+@include list;
+@include search;
+@include morejobsButton;
 
 .root {
     background: $color-root-background;
@@ -86,12 +24,7 @@ ul {
     z-index: 0;
     overflow: hidden;
 
-    .header {
-        text-align: center;
-        color: $color-base;
-        font-size: $font-size-header;
-        font-weight: 900;
-    }
+    @include header;
 }
 
 .flex-flex {
