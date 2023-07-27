@@ -1,9 +1,10 @@
 import React from 'react';
 import JSONJOBS from '../db.json';
+import '../style/joblist.css';
 
 function JobList() {
   return (
-    <div>
+    <div className='joblist'>
       <header>
         <h1>İş Zirve</h1>
         <input type='text' />

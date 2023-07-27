@@ -86,7 +86,7 @@ function SearchBar() {
                                     onClick={() => onSearch(jobs.title)}
                                     key={jobs.id}
                                 >
-                                    <ul className='jobList'>
+                                    <ul>
                                         <li>{jobs.title}</li>
                                         <li>{jobs.city}</li>
                                         <li>{jobs.date}</li>

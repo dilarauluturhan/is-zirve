@@ -25,18 +25,10 @@ ul {
   list-style: none;
   text-align: center;
 }
-
 ul li {
   display: inline-block;
   text-align: left;
   font-size: 1.3rem;
-}
-
-.header {
-  text-align: center;
-  color: #22333c;
-  font-size: 8rem;
-  font-weight: 900;
 }
 
 .search {
@@ -44,8 +36,7 @@ ul li {
   align-items: center;
   justify-content: center;
 }
-
-.search-input {
+.search .search-input {
   font-size: 1rem;
   line-height: 28px;
   padding: 8px 16px;
@@ -56,8 +47,7 @@ ul li {
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
-
-.search-button {
+.search .search-button {
   width: 3.5rem;
   height: 2.9rem;
   border-radius: 7px;
@@ -69,8 +59,7 @@ ul li {
   cursor: pointer;
   margin-left: 10px;
 }
-
-.search-button:hover {
+.search .search-button:hover {
   background-color: #ffffff;
   color: #22333c;
   font-size: 1.3rem;
@@ -88,7 +77,6 @@ ul li {
   padding: 0.5rem 1rem;
   border-radius: 7px;
 }
-
 .moreJobs:hover {
   color: #ffffff;
   background-color: #22333c;
@@ -111,6 +99,12 @@ ul li {
   top: 0;
   z-index: 0;
   overflow: hidden;
+}
+.loginbackground .header {
+  text-align: center;
+  color: #22333c;
+  font-size: 8rem;
+  font-weight: 900;
 }
 
 .flex-flex {

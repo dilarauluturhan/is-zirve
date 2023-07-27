@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"joblist.css"}
+{"version":3,"sources":["_variables.scss","joblist.scss","joblist.css"],"names":[],"mappings":"AAAQ,wGAAA;ACGR;EACI,yBDwBoB;AEzBxB","file":"joblist.css"}
