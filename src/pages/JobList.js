@@ -14,7 +14,7 @@ function JobList() {
         </button>
         <div className='dropdown'>
           <button className='drop-button'>
-            Filterele
+            Filtrele
           </button>
           <div className='dropdown-content'>
             <a href='#\'>İsme göre</a>
@@ -27,10 +27,11 @@ function JobList() {
         <div>
           {JSONJOBS.map((jobs) => (
             <div key={jobs.id}>
-              <ul className='jobList'>
+              <ul>
                 <li>{jobs.title}</li>
                 <li>{jobs.city}</li>
                 <li>{jobs.date}</li>
+                <div className='underline'></div>
               </ul>
             </div>
           ))}

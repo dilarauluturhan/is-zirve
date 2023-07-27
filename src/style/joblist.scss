@@ -24,6 +24,12 @@ input {
     box-shadow: $color-input-shadow;
 }
 
+ul {
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
 .search-button {
     width: 3.5rem;
     height: 2.9rem;
@@ -98,6 +104,10 @@ input {
             color: #5469d4;
         }
     }
+}
+
+.underline {
+    @include underline;
 }
 
 .pagination {

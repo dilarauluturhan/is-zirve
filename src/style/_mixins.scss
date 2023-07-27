@@ -77,3 +77,11 @@
         font-weight: 900;
     }
 }
+
+@mixin underline {
+    width: 40rem;
+    height: 0.2rem;
+    background: #e3e8ee;
+    margin-left: auto;
+    margin-right: auto;
+}
