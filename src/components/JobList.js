@@ -31,6 +31,7 @@ function JobList() {
 
   // filtreyi sıfırlayan fonksiyon
   const resetFilter = () => {
+    // console.log("reset");
     setFilter(''); // filtreyi sıfırla
     setCurrentPage(1); // sayfa numarasını sıfırla
   }
@@ -43,6 +44,7 @@ function JobList() {
   }
 
   const handleFilterChange = (selectedFilter) => {
+    // console.log("Filtre değiştirildi: ", selectedFilter);
     setFilter(selectedFilter);
     setCurrentPage(1); //filtre değiştiğinde sayfa numarasını sıfırla
   }
