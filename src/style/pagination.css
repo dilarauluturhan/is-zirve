@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-item {
+  color: #22333c;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: none;
+  border-radius: 15px;
+}
+.page-item:hover {
+  background-color: #22333c;
+  color: #ffffff;
+}/*# sourceMappingURL=pagination.css.map */

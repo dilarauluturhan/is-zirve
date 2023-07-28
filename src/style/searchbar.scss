@@ -2,6 +2,7 @@
 @import '_mixins';
 @import '_keyframes';
 
+@include subheader;
 @include list;
 @include search;
 @include morejobsButton;
@@ -111,23 +112,4 @@
 
 .tans4s {
     animation: animationLeftRight 4s ease-in-out infinite;
-}
-
-.job-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #e3e8ee;
-    border-radius: 7px;
-    padding: 1rem;
-    width: 35rem;
-    position: relative;
-    left: 40.7rem;
-    
-    li{
-        flex: 1;
-        margin-bottom: 0;
-        text-align: center;
-        cursor: pointer;
-    }
 }

@@ -1,12 +1,29 @@
 @mixin list {
-    ul {
+    .job-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #e3e8ee;
+        border-radius: 7px;
+        padding: 1rem;
+        width: 35rem;
+        position: relative;
+        left: 40.7rem;
         list-style: none;
-        text-align: center;
-
+    
         li {
-            display: inline-block;
-            text-align: left;
+            flex: 1;
+            margin-bottom: 0;
+            cursor: pointer;
             font-size: $font-size-li;
+        }
+    
+        .job-city {
+            text-align: center;
+        }
+    
+        .job-date {
+            text-align: right;
         }
     }
 }
@@ -78,10 +95,12 @@
     }
 }
 
-@mixin underline {
-    width: 40rem;
-    height: 0.2rem;
-    background: #e3e8ee;
-    margin-left: auto;
-    margin-right: auto;
+@mixin subheader {
+    .subheader {
+        text-align: center;
+        color: $color-base;
+        font-size: 22px;
+        font-weight: 600;
+        font-style: italic;
+    }
 }

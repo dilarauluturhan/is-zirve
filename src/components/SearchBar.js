@@ -5,6 +5,7 @@ import '../style/searchbar.css';
 
 function SearchBar() {
     const [value, setValue] = useState('');
+    const [showMore, setShowMore] = useState(false);
 
     const onChange = (e) => {
         setValue(e.target.value);
@@ -13,6 +14,7 @@ function SearchBar() {
     const onSearch = (searchTerm) => {
         console.log('Search', searchTerm);
         setValue(searchTerm); // çıkan meskeğe tıkladığımda input'ta aradığım kelimeyi tamamlıyor
+        setShowMore(true);
     }
     return (
         <div>
@@ -61,6 +63,7 @@ function SearchBar() {
             <main className='root'>
                 <div className='loginbackground'>
                     <h1 className='header'>işZirve</h1>
+                    <p className='subheader'>Kariyerinde zirve yapanlar...</p>
                     <div className='search'>
                         <input
                             type='text'
@@ -93,8 +96,10 @@ function SearchBar() {
                                     </ul>
                                 </div>
                             ))}
+                        {showMore && (
+                            <Link className='more-jobs' to='/joblist'>Daha fazla...</Link>
+                        )}
                     </div>
-                    <Link className='more-jobs' to='/joblist'>Daha fazla...</Link>
                 </div>
             </main>
         </div>

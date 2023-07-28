@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SearchBar from './pages/SearchBar';
-import JobList from './pages/JobList';
+import SearchBar from './components/SearchBar.js';
+import JobList from './components/JobList.js';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 @import '_variables';
-@import '_mixins';
+
 
 header {
     display: flex;
@@ -10,23 +10,47 @@ header {
 h1 {
     color: $color-base;
     font-size: 50px;
+    font-weight: 800;
 }
 
 input {
     font-size: $font-size-input;
     line-height: 28px;
     padding: 8px 16px;
-    width: 30rem;
+    width: 40rem;
     height: 1.7rem;
     border-radius: 7px;
     outline-color: $color-input-outline;
     background-color: $color-input-background;
     box-shadow: $color-input-shadow;
+    margin-left: 5.5rem;
 }
 
-ul {
+.job-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e3e8ee;
+    border-radius: 7px;
+    padding: 1rem;
+    width: 50rem;
+    position: relative;
+    left: 36rem;
+    list-style: none;
+
     li {
-        margin-bottom: 1rem;
+        flex: 1;
+        margin-bottom: 0;
+        cursor: pointer;
+        font-size: $font-size-li;
+    }
+
+    .job-city {
+        text-align: center;
+    }
+
+    .job-date {
+        text-align: right;
     }
 }
 
@@ -40,7 +64,7 @@ ul {
     font-size: $font-size-search-button;
     font-weight: 700;
     cursor: pointer;
-    margin-left: 10px;
+
 
     &:hover {
         background-color: $color-white;
@@ -89,7 +113,7 @@ ul {
     height: 9.7rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top: 2px;
+    margin-top: 1px;
 
     a {
         color: $color-base;
@@ -103,35 +127,6 @@ ul {
         &:hover {
             color: #5469d4;
         }
-    }
-}
-
-.underline {
-    @include underline;
-}
-
-.pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    a {
-        color: $color-base;
-        float: left;
-        padding: 8px 16px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-
-        &:hover {
-            &:not(.active) {
-                background-color: #e3e8ee;
-            }
-        }
-    }
-
-    .active {
-        background-color: $color-base;
-        color: $color-white;
     }
 }
 
