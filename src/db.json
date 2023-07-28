@@ -3,120 +3,168 @@
         "id": 1,
         "title": "Frontend Developer",
         "city": "İstanbul",
-        "date": "07/2023"
+        "date": "2023/07/21"
     },
     {
         "id": 2,
         "title": "Backend Developer",
         "city": "Ankara",
-        "date": "06/2023"
+        "date": "2023/06/15"
     },
     {
         "id": 3,
         "title": "IOS Developer",
         "city": "Antalya",
-        "date": "07/2023"
+        "date": "2023/07/12"
     },
     {
         "id": 4,
         "title": "Android Developer",
         "city": "İstanbul",
-        "date": "05/2023"
+        "date": "2023/05/01"
     },
     {
         "id": 5,
         "title": "Reactjs Developer",
         "city": "İstanbul",
-        "date": "07/2023"
+        "date": "2023/07/05"
     },
     {
         "id": 6,
         "title": "Backend Developer",
         "city": "Balıkesir",
-        "date": "08/2023"
+        "date": "2023/08/14"
     },
     {
         "id": 7,
         "title": "Frontend Developer",
         "city": "İzmir",
-        "date": "09/2023"
+        "date": "2023/09/06"
     },
     {
         "id": 8,
         "title": "Fullstack Developer",
         "city": "Isparta",
-        "date": "07/2023"
+        "date": "2023/07/03"
     },
     {
         "id": 9,
         "title": "Backend Developer",
         "city": "Denizli",
-        "date": "07/2023"
+        "date": "2023/07/26"
     },
     {
         "id": 10,
         "title": "Frontend Developer",
         "city": "Aydın",
-        "date": "10/2023"
+        "date": "2023/10/12"
     },
     {
         "id": 11,
         "title": "Android Developer",
         "city": "Muğla",
-        "date": "07/2023"
+        "date": "2023/05/23"
     },
     {
         "id": 12,
         "title": "IOS Developer",
         "city": "İzmir",
-        "date": "06/2023"
+        "date": "2023/06/24"
     },
     {
         "id": 13,
         "title": "Fullstack Developer",
         "city": "Çanakkale",
-        "date": "07/2023"
+        "date": "2023/07/19"
     },
     {
         "id": 14,
         "title": "JavaScript Developer",
         "city": "İstanbul",
-        "date": "08/2023"
+        "date": "2023/08/11"
     },
     {
         "id": 15,
         "title": "Angular Developer",
         "city": "İzmir",
-        "date": "07/2023"
+        "date": "2023/07/17"
     },
     {
         "id": 16,
         "title": "Reactjs Developer",
         "city": "Bolu",
-        "date": "07/2023"
+        "date": "2023/07/25"
     },
     {
         "id": 17,
         "title": "Vuejs Developer",
         "city": "Muğla",
-        "date": "09/2023"
+        "date": "2023/09/01"
     },
     {
         "id": 18,
         "title": "Java Developer",
         "city": "İstanbul",
-        "date": "08/2023"
+        "date": "2023/04/23"
     },
     {
         "id": 19,
         "title": "PHP Developer",
         "city": "Ankara",
-        "date": "08/2023"
+        "date": "2023/08/25"
     },
     {
         "id": 20,
         "title": ".Net Developer",
         "city": "Çanakkale",
-        "date": "07/2023"
+        "date": "2023/07/02"
+    },
+    {
+        "id": 21,
+        "title": "Frontend Developer",
+        "city": "Antalya",
+        "date": "2023/09/02"
+    },
+    {
+        "id": 22,
+        "title": "Nodejs Developer",
+        "city": "Bursa",
+        "date": "2023/08/12"
+    },
+    {
+        "id": 23,
+        "title": "Frontend Developer",
+        "city": "İstanbul",
+        "date": "2023/08/15"
+    },
+    {
+        "id": 24,
+        "title": "Remote Backend Developer",
+        "city": "İstanbul",
+        "date": "2023/09/17"
+    },
+    {
+        "id": 25,
+        "title": "C# Developer",
+        "city": "İstanbul",
+        "date": "2023/07/22"
+    },
+    {
+        "id": 26,
+        "title": "C# Developer",
+        "city": "İzmir",
+        "date": "2023/07/22"
+    },
+    {
+        "id": 27,
+        "title": "Vuejs Developer",
+        "city": "Ankara",
+        "date": "2023/10/22"
+    },
+    {
+        "id": 28,
+        "title": "Vuejs Developer",
+        "city": "Ankara",
+        "date": "2023/10/22"
     }
 ]
