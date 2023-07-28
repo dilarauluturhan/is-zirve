@@ -3,4 +3,4 @@
 </div>
 
 ## About The Project✨
-![](https://github.com/dilarauluturhan/is-zirve/assets/120499369/0cf89d36-2f6b-4904-9071-8155e0a7d96d)
+![](https://github.com/dilarauluturhan/is-zirve/assets/120499369/40f8bf45-5110-4d1c-aac5-c2bb54721160)
