@@ -1,16 +1,17 @@
 @import '_variables';
 
-
-header {
+.header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: relative;
+    right: 9%;
 }
 
 h1 {
     color: $color-base;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: $font-size-h1;
+    font-weight: 900;
 }
 
 input {
@@ -30,12 +31,13 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #e3e8ee;
+    border: 1px solid $box-background--gray100;
     border-radius: 7px;
     padding: 1rem;
     width: 50rem;
     position: relative;
-    left: 36rem;
+    top: -4rem;
+    left: 34rem;
     list-style: none;
 
     li {
@@ -64,7 +66,7 @@ input {
     font-size: $font-size-search-button;
     font-weight: 700;
     cursor: pointer;
-
+    margin-left: 5px;
 
     &:hover {
         background-color: $color-white;
@@ -89,7 +91,7 @@ input {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    left: 74%;
 
     &:hover {
         .dropdown-content {
@@ -97,7 +99,7 @@ input {
         }
 
         .drop-button {
-            color: #5469d4;
+            color: $box-background--blue;
         }
     }
 }
@@ -110,7 +112,7 @@ input {
     border: 2px solid $color-base;
     border-radius: 7px;
     width: 12rem;
-    height: 12.4rem;
+    height: 9.3rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: 1px;
@@ -125,11 +127,12 @@ input {
         transition: ease-in 0.3s;
 
         &:hover {
-            color: #5469d4;
+            color: $box-background--blue;
         }
     }
 }
 
 .job-list {
     background-color: $color-white;
+    margin-top: 1rem;
 }

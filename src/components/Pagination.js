@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/pagination.css';
 
 function Pagination({ currentPage, totalPages, onPageChange }) {
@@ -6,10 +6,10 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
 
     return (
         <div className='pagination'>
-            <a 
-            href='#\' 
-            className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}
-            onClick={() => onPageChange(currentPage-1)}
+            <a
+                href='#\'
+                className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}
+                onClick={() => onPageChange(currentPage - 1)}
             >
                 <i class="fa-solid fa-circle-arrow-left fa-xl" style={{ color: "#22333c" }}></i>
             </a>
@@ -31,10 +31,10 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
                 })
             }
 
-            <a 
-            href='#\' 
-            className={`page-item ${currentPage === totalPages ? 'disabled': ''}`}
-            onClick={() => onPageChange(currentPage + 1)}
+            <a
+                href='#\'
+                className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}
+                onClick={() => onPageChange(currentPage + 1)}
             >
                 <i class="fa-solid fa-circle-arrow-right fa-xl" style={{ color: "#22333c" }}></i>
             </a>

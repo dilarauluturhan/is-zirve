@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
-header {
+.header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  position: relative;
+  right: 9%;
 }
 
 h1 {
   color: #22333c;
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 input {
@@ -33,7 +35,8 @@ input {
   padding: 1rem;
   width: 50rem;
   position: relative;
-  left: 36rem;
+  top: -4rem;
+  left: 34rem;
   list-style: none;
 }
 .job-info li {
@@ -59,6 +62,7 @@ input {
   font-size: 1.3rem;
   font-weight: 700;
   cursor: pointer;
+  margin-left: 5px;
 }
 .search-button:hover {
   background-color: #ffffff;
@@ -82,7 +86,7 @@ input {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  left: 74%;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -99,7 +103,7 @@ input {
   border: 2px solid #22333c;
   border-radius: 7px;
   width: 12rem;
-  height: 12.4rem;
+  height: 9.3rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-top: 1px;
@@ -119,4 +123,5 @@ input {
 
 .job-list {
   background-color: #ffffff;
+  margin-top: 1rem;
 }/*# sourceMappingURL=joblist.css.map */

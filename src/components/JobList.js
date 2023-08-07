@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 
 function JobList() {
 
-  const jobsPerPage = 7; // her sayfada kaç iş ilanı gösterileceği
+  const jobsPerPage = 8; // her sayfada kaç iş ilanı gösterileceği
   const [currentPage, setCurrentPage] = useState(1); // şu anki sayfa numarası
   const [filter, setFilter] = useState(''); // filtreleme işlemi için
 
@@ -29,17 +29,11 @@ function JobList() {
     currentPage * jobsPerPage
   );
 
-  // filtreyi sıfırlayan fonksiyon
-  const resetFilter = () => {
-    // console.log("reset");
-    setFilter(''); // filtreyi sıfırla
-    setCurrentPage(1); // sayfa numarasını sıfırla
-  }
-
   // toplam sayfa sayısı hesabı
   const totalPages = Math.ceil(JSONJOBS.length / jobsPerPage);
 
   const handlePageChange = (pageNumber) => {
+    // console.log("Sayfa değiştirildi: ", pageNumber);
     setCurrentPage(pageNumber);
   }
 
@@ -52,11 +46,13 @@ function JobList() {
   return (
     <div className='job-list'>
       <header>
-        <h1>İş Zirve</h1>
-        <input type='text' />
-        <button className='search-button'>
-          <i className="fa-solid fa-magnifying-glass"></i>
-        </button>
+        <div className='header'>
+          <h1>İş Zirve</h1>
+          <input type='text' />
+          <button className='search-button'>
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
         <div className='dropdown'>
           <button className='drop-button'>
             Filtrele
@@ -65,7 +61,6 @@ function JobList() {
             <a href='#\' onClick={() => handleFilterChange('title')}>İsme göre</a>
             <a href='#\' onClick={() => handleFilterChange('new')}>Tarihe göre en yeni</a>
             <a href='#\' onClick={() => handleFilterChange('old')}>Tarihe göre en eski</a>
-            <a href='#\' onClick={resetFilter}>Filtreyi sıfırla</a>
           </div>
         </div>
       </header>

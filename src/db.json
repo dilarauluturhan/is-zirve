@@ -166,5 +166,29 @@
         "title": "Vuejs Developer",
         "city": "Ankara",
         "date": "2023/10/22"
+    },
+    {
+        "id": 29,
+        "title": "Frontend Developer",
+        "city": "Bursa",
+        "date": "2023/09/12"
+    },
+    {
+        "id": 30,
+        "title": "Frontend Developer",
+        "city": "Manisa",
+        "date": "2023/08/02"
+    },
+    {
+        "id": 31,
+        "title": "Backend Developer",
+        "city": "Muğla",
+        "date": "2023/07/24"
+    },
+    {
+        "id": 32,
+        "title": ".Net Developer",
+        "city": "İstanbul",
+        "date": "2023/10/20"
     }
 ]

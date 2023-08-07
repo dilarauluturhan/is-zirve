@@ -39,15 +39,6 @@
   z-index: 0;
   overflow: hidden;
 }
-.loginbackground .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #22333c;
-  font-size: 8rem;
-  font-weight: 900;
-  margin-left: 15px;
-}
 
 .flex-flex {
   display: flex;
@@ -130,6 +121,14 @@
   animation: animationLeftRight 4s ease-in-out infinite;
 }
 
+.header {
+  position: relative;
+  left: 1%;
+  color: #22333c;
+  font-size: 8rem;
+  font-weight: 900;
+}
+
 .subheader {
   display: flex;
   align-items: center;
@@ -139,31 +138,6 @@
   font-weight: 600;
   font-style: italic;
   margin-left: 45px;
-}
-
-.job-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #e3e8ee;
-  border-radius: 7px;
-  padding: 1rem;
-  width: 35rem;
-  position: relative;
-  left: 40rem;
-  list-style: none;
-}
-.job-info li {
-  flex: 1;
-  margin-bottom: 0;
-  cursor: pointer;
-  font-size: 1.3rem;
-}
-.job-info .job-city {
-  text-align: center;
-}
-.job-info .job-date {
-  text-align: right;
 }
 
 .search {
@@ -199,20 +173,4 @@
   color: #22333c;
   font-size: 1.3rem;
   font-weight: 700;
-}
-
-.more-jobs {
-  position: relative;
-  left: 49%;
-  width: 10rem;
-  text-decoration: none;
-  color: #22333c;
-  font-size: font-size-morejobs-button;
-  border: 1px solid #22333c;
-  padding: 0.5rem 1rem;
-  border-radius: 7px;
-}
-.more-jobs:hover {
-  color: #ffffff;
-  background-color: #22333c;
 }/*# sourceMappingURL=searchbar.css.map */

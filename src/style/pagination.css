@@ -17,4 +17,9 @@
 .page-item:hover {
   background-color: #22333c;
   color: #ffffff;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }/*# sourceMappingURL=pagination.css.map */
