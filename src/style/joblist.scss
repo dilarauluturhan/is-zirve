@@ -53,6 +53,10 @@
     }
 
     .dropdown {
+        position: absolute;
+        right: 20%;
+        top: 11.1rem;
+        transform: translateY(-50%);
 
         &:hover {
             .dropdown-content {
@@ -116,8 +120,9 @@
         width: 50rem;
         padding: 1rem;
         position: relative;
-        top: -4rem;
+        top: -1rem;
         left: 34rem;
+        
 
         li {
             flex: 1;

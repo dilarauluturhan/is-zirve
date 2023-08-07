@@ -46,6 +46,12 @@
   font-size: 1.3rem;
   font-weight: 700;
 }
+.job-list .dropdown {
+  position: absolute;
+  right: 20%;
+  top: 11.1rem;
+  transform: translateY(-50%);
+}
 .job-list .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -99,7 +105,7 @@
   width: 50rem;
   padding: 1rem;
   position: relative;
-  top: -4rem;
+  top: -1rem;
   left: 34rem;
 }
 .job-list .job-info li {
