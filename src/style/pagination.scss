@@ -12,13 +12,7 @@
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color 0.3s;
-    border: none;
-    border-radius: 15px;
-    
-    &:hover{
-        background-color: $color-base;
-        color: $color-white;
-    }
+    font-size: 1.3rem;
 }
 
 .disabled {

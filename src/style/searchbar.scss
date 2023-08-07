@@ -1,27 +1,18 @@
 @import '_variables';
-@import '_mixins';
-@import '_keyframes';
-
-// SEARCH BAR
-@include background;
 
 .header {
-    position: relative;
-    left: 1%;
+    text-align: center;
     color: $color-base;
     font-size: $font-size-header;
     font-weight: 900;
 }
 
 .subheader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: $color-base;
     font-size: 22px;
     font-weight: 600;
     font-style: italic;
-    margin-left: 45px;
 }
 
 .search {
@@ -43,13 +34,12 @@
 
     .search-button {
         width: 3.5rem;
-        height: 2.9rem;
+        height: 3rem;
         border-radius: 7px;
-        background-color: $color-base;
-        box-shadow: $color-search-button-shadow;
         color: $color-white;
         font-size: $font-size-search-button;
         font-weight: 700;
+        background-color: $color-base;
         cursor: pointer;
         margin-left: 5px;
 
@@ -62,7 +52,52 @@
     }
 }
 
-// SEARCH BAR
+.job-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    border: 1px solid $box-background--gray100;
+    border-radius: 7px;
+    width: 33.5rem;
+    padding: 1rem;
+    position: relative;
+    left: 35%;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    li {
+        flex: 1;
+    }
+
+    .job-city {
+        text-align: center;
+    }
+
+    .job-date {
+        text-align: right;
+    }
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-morejobs-button;
+    color: $color-base;
+    text-decoration: none;
+    border: 1px solid $color-base;
+    border-radius: 7px;
+    width: 8rem;
+    height: 3rem;
+    position: relative;
+    left: 47%;
+
+    &:hover {
+        background-color: $color-base;
+        color: $color-white;
+    }
+}
 
 .root {
     background: $color-root-background;
@@ -167,4 +202,32 @@
 
 .tans4s {
     animation: animationLeftRight 4s ease-in-out infinite;
+}
+
+@keyframes animationLeftRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animationRightLeft {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }

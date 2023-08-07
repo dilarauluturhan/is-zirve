@@ -1,26 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
-@keyframes animationLeftRight {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(1000px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+.header {
+  text-align: center;
+  color: #22333c;
+  font-size: 8rem;
+  font-weight: 900;
 }
-@keyframes animationRightLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+
+.subheader {
+  text-align: center;
+  color: #22333c;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
 }
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .search-input {
+  font-size: 1rem;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 30rem;
+  height: 1.7rem;
+  border-radius: 7px;
+  outline-color: rgba(84, 105, 212, 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+.search .search-button {
+  width: 3.5rem;
+  height: 3rem;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #22333c;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.search .search-button:hover {
+  background-color: #ffffff;
+  color: #22333c;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.job-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  border: 1px solid #e3e8ee;
+  border-radius: 7px;
+  width: 33.5rem;
+  padding: 1rem;
+  position: relative;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.job-info li {
+  flex: 1;
+}
+.job-info .job-city {
+  text-align: center;
+}
+.job-info .job-date {
+  text-align: right;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #22333c;
+  text-decoration: none;
+  border: 1px solid #22333c;
+  border-radius: 7px;
+  width: 8rem;
+  height: 3rem;
+  position: relative;
+  left: 47%;
+}
+.more:hover {
+  background-color: #22333c;
+  color: #ffffff;
+}
+
 .root {
   background: #EEEDED;
   display: flex;
@@ -121,56 +191,25 @@
   animation: animationLeftRight 4s ease-in-out infinite;
 }
 
-.header {
-  position: relative;
-  left: 1%;
-  color: #22333c;
-  font-size: 8rem;
-  font-weight: 900;
+@keyframes animationLeftRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
-
-.subheader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #22333c;
-  font-size: 22px;
-  font-weight: 600;
-  font-style: italic;
-  margin-left: 45px;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.search .search-input {
-  font-size: 1rem;
-  line-height: 28px;
-  padding: 8px 16px;
-  width: 30rem;
-  height: 1.7rem;
-  border-radius: 7px;
-  outline-color: rgba(84, 105, 212, 0.5);
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-.search .search-button {
-  width: 3.5rem;
-  height: 2.9rem;
-  border-radius: 7px;
-  background-color: #22333c;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgb(84, 105, 212) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-  color: #ffffff;
-  font-size: 1.3rem;
-  font-weight: 700;
-  cursor: pointer;
-  margin-left: 5px;
-}
-.search .search-button:hover {
-  background-color: #ffffff;
-  color: #22333c;
-  font-size: 1.3rem;
-  font-weight: 700;
+@keyframes animationRightLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }/*# sourceMappingURL=searchbar.css.map */

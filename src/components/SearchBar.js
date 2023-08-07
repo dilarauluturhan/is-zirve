@@ -18,7 +18,7 @@ function SearchBar() {
         setValue(searchTerm); // çıkan meskeğe tıkladığımda input'ta aradığım kelimeyi tamamlıyor
         setShowMore(true);
     }
-    
+
     return (
         <div>
             <header>
@@ -99,12 +99,13 @@ function SearchBar() {
                                     </ul>
                                 </div>
                             ))}
-                       {showMore && (
-                           <Link className='more-jobs' to='/joblist'>Daha fazla...</Link>
-                           )} 
+                        {showMore && (
+                            <Link className='more' to='/joblist'>Daha fazla...</Link>
+                        )}
                     </div>
                 </div>
             </main>
+            
         </div>
     )
 }
