@@ -46,7 +46,7 @@ function JobList() {
   return (
     <div className='job-list'>
       <header>
-        <div className='header'>
+        <div className='head'>
           <h1>İş Zirve</h1>
           <input type='text' />
           <button className='search-button'>
