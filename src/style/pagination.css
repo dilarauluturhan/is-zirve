@@ -5,6 +5,26 @@
   justify-content: center;
   margin-top: 5rem;
 }
+.pagination .page {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #22333c;
+  margin-right: 9px;
+}
+.pagination .page-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #22333c;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9px;
+}
 .pagination .page-item {
   color: #22333c;
   float: left;
@@ -12,6 +32,7 @@
   text-decoration: none;
   transition: background-color 0.3s;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .disabled {

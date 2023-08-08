@@ -6,6 +6,28 @@
     justify-content: center;
     margin-top: 5rem;
 
+    .page {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $color-base;
+        margin-right: 9px;
+    }
+
+    .page-number{
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: $color-base;
+        color: $color-white;
+        border: none;
+        border-radius: 50px;
+        width: 2.2rem;
+        height: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 9px;
+    }
+
     .page-item {
         color: $color-base;
         float: left;
@@ -13,9 +35,9 @@
         text-decoration: none;
         transition: background-color 0.3s;
         font-size: 1.3rem;
+        font-weight: 600; 
     }
 }
-
 
 .disabled {
     pointer-events: none;

@@ -6,6 +6,8 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
 
     return (
         <div className='pagination'>
+            <p className='page'>Sayfa</p>
+            <div className='page-number'>{currentPage}</div>
             <a
                 href='#\'
                 className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}
