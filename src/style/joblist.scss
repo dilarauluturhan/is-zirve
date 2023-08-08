@@ -1,6 +1,9 @@
 @import '_variables';
 
 .job-list {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: $color-white;
     margin-top: 1rem;
 
@@ -8,8 +11,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 2rem;
 
-        h1 {
+        .job-head {
+            text-decoration: none;
             color: $color-base;
             font-size: $font-size-h1;
             font-weight: 900;
@@ -120,9 +125,9 @@
         width: 50rem;
         padding: 1rem;
         position: relative;
-        top: -1rem;
+        top: 2rem;
         left: 34rem;
-        
+
 
         li {
             flex: 1;

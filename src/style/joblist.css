@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
 .job-list {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #ffffff;
   margin-top: 1rem;
 }
@@ -7,8 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
-.job-list .head h1 {
+.job-list .head .job-head {
+  text-decoration: none;
   color: #22333c;
   font-size: 50px;
   font-weight: 900;
@@ -105,7 +110,7 @@
   width: 50rem;
   padding: 1rem;
   position: relative;
-  top: -1rem;
+  top: 2rem;
   left: 34rem;
 }
 .job-list .job-info li {

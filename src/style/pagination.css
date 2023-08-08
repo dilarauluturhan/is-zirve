@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5rem;
 }
-
-.page-item {
+.pagination .page-item {
   color: #22333c;
   float: left;
   padding: 8px 16px;

@@ -20,7 +20,7 @@ function SearchBar() {
     }
 
     return (
-        <div>
+        <div className='search-bar'>
             <header>
                 <div class="flex-flex flex-direction--column" style={{ minHeight: "100vh", flexGrow: "1" }}>
                     <div class="loginbackground box-background--white padding-top--64">
