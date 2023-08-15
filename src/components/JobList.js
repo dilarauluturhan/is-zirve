@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import JSONJOBS from '../db.json';
 import '../style/joblist.css';
 import Pagination from './Pagination';
 
 function JobList() {
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  const initialSearchTerm = searchParams.get('search') || ''; // URL'den arama terimini çek
 
   const jobsPerPage = 8; // her sayfada kaç iş ilanı gösterileceği
   const [currentPage, setCurrentPage] = useState(1); // şu anki sayfa numarası
   const [filter, setFilter] = useState(''); // filtreleme işlemi için
-  const [searchTerm, setSearchTerm] = useState(''); // arama terimi için
+  const [searchTerm, setSearchTerm] = useState(initialSearchTerm); // arama terimi için
   const [searchButtonDisabled, setSearchButtonDisabled] = useState(true); // butonu disabled yapmak için
 
   // iş ilanlarını filtreleyen fonksiyon
@@ -50,6 +54,9 @@ function JobList() {
   const handleSearch = () => {
     setFilter('search');
     setCurrentPage(1);
+
+    // arama yapıldığında JobList sayfasına yönlendir ve arama terimini URL'e ekle
+    navigate(`/joblist?search=${searchTerm}`);
   }
 
   const handleSearchTermChange = (event) => {
@@ -68,10 +75,10 @@ function JobList() {
             value={searchTerm}
             onChange={handleSearchTermChange}
           />
-          <button 
-          className='search-button' 
-          onClick={handleSearch}
-          disabled={searchButtonDisabled}
+          <button
+            className='search-button'
+            onClick={handleSearch}
+            disabled={searchButtonDisabled}
           >
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>

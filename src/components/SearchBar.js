@@ -19,7 +19,7 @@ function SearchBar() {
         setValue(searchTerm); // çıkan meskeğe tıkladığımda input'ta aradığım kelimeyi tamamlıyor
         setShowMore(true);
 
-        navigate('/joblist');
+        navigate(`/joblist?search=${searchTerm}`);
     }
 
     return (
