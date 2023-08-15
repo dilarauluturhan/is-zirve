@@ -10,6 +10,7 @@ function JobList() {
   const [currentPage, setCurrentPage] = useState(1); // şu anki sayfa numarası
   const [filter, setFilter] = useState(''); // filtreleme işlemi için
   const [searchTerm, setSearchTerm] = useState(''); // arama terimi için
+  const [searchButtonDisabled, setSearchButtonDisabled] = useState(true); // butonu disabled yapmak için
 
   // iş ilanlarını filtreleyen fonksiyon
   const filterJobs = (jobList) => {
@@ -52,19 +53,26 @@ function JobList() {
   }
 
   const handleSearchTermChange = (event) => {
-    setSearchTerm(event.target.value);
+    const newSearchTerm = event.target.value;
+    setSearchTerm(newSearchTerm);
+    setSearchButtonDisabled(newSearchTerm.trim() === '');
   }
+
   return (
     <div className='job-list'>
       <header>
         <div className='head'>
           <Link to='/' className='job-head'>İş Zirve</Link>
-          <input 
-          type='text'
-          value={searchTerm}
-          onChange={handleSearchTermChange}
+          <input
+            type='text'
+            value={searchTerm}
+            onChange={handleSearchTermChange}
           />
-          <button className='search-button' onClick={handleSearch}>
+          <button 
+          className='search-button' 
+          onClick={handleSearch}
+          disabled={searchButtonDisabled}
+          >
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
