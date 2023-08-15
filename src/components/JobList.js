@@ -35,13 +35,13 @@ function JobList() {
   // toplam sayfa sayısı hesabı
   const totalPages = Math.ceil(JSONJOBS.length / jobsPerPage);
 
+  const totalPagesForSearch = Math.ceil(filterJobs.length / jobsPerPage);
+
   const handlePageChange = (pageNumber) => {
-    // console.log("Sayfa değiştirildi: ", pageNumber);
     setCurrentPage(pageNumber);
   }
 
   const handleFilterChange = (selectedFilter) => {
-    // console.log("Filtre değiştirildi: ", selectedFilter);
     setFilter(selectedFilter);
     setCurrentPage(1); //filtre değiştiğinde sayfa numarasını sıfırla
   }
@@ -95,7 +95,8 @@ function JobList() {
       <footer>
         <Pagination
           currentPage={currentPage}
-          totalPages={totalPages}
+          // filter eğer search ise yani arama sonucu görüntüleniyorsa totalPagesForSearch aksi durumda tüm iş ilanları için totalPages
+          totalPages={filter === 'search' ? totalPagesForSearch : totalPages}
           onPageChange={handlePageChange}
         />
       </footer>

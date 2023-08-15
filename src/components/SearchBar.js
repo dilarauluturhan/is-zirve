@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import JSONJOBS from '../db.json';
 import '../style/searchbar.css';
 
 function SearchBar() {
+    const navigate = useNavigate();
+
     const [value, setValue] = useState('');
     const [showMore, setShowMore] = useState(false);
 
@@ -14,9 +16,10 @@ function SearchBar() {
     }
 
     const onSearch = (searchTerm) => {
-        console.log('Search', searchTerm);
         setValue(searchTerm); // çıkan meskeğe tıkladığımda input'ta aradığım kelimeyi tamamlıyor
         setShowMore(true);
+
+        navigate('/joblist');
     }
 
     return (
@@ -105,7 +108,7 @@ function SearchBar() {
                     </div>
                 </div>
             </main>
-            
+
         </div>
     )
 }
