@@ -6,13 +6,14 @@ import Pagination from './Pagination';
 
 function JobList() {
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const initialSearchTerm = searchParams.get('search') || ''; // URL'den arama terimini çek
+  const initialFilter = searchParams.get('filter') || '';
 
   const jobsPerPage = 8; // her sayfada kaç iş ilanı gösterileceği
   const [currentPage, setCurrentPage] = useState(1); // şu anki sayfa numarası
-  const [filter, setFilter] = useState(''); // filtreleme işlemi için
+  const [filter, setFilter] = useState(initialFilter); // filtreleme işlemi için
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm); // arama terimi için
   const [searchButtonDisabled, setSearchButtonDisabled] = useState(true); // butonu disabled yapmak için
 
@@ -49,20 +50,45 @@ function JobList() {
   const handleFilterChange = (selectedFilter) => {
     setFilter(selectedFilter);
     setCurrentPage(1); //filtre değiştiğinde sayfa numarasını sıfırla
+
+    let filterName = '';
+
+    switch (selectedFilter) {
+      case 'title':
+        filterName = 'isim';
+        break;
+      case 'new':
+        filterName = 'tarih-yeni';
+        break;
+      case 'old':
+        filterName = 'tarih-eski'
+        break;
+      default:
+        break;
+    }
+
+    // filtre değiştiğinde JobList sayfasına yönlendirme yap ve filtrenin adını URL'de göster
+    navigate(`/joblist?filter=${filterName}`);
   }
 
   const handleSearch = () => {
     setFilter('search');
     setCurrentPage(1);
 
-    // arama yapıldığında JobList sayfasına yönlendir ve arama terimini URL'e ekle
-    navigate(`/joblist?search=${searchTerm}`);
+    // arama yapıldığında URL'deki sorgu parametrelerini güncelle
+    setSearchParams({ search: searchTerm, filter });
+
+    // arama yapıldığında JobList sayfasına yönlendirme yap
+    navigate(`/joblist?search=${encodeURIComponent(searchTerm)}&filter=${filter}`);
   }
 
   const handleSearchTermChange = (event) => {
     const newSearchTerm = event.target.value;
     setSearchTerm(newSearchTerm);
     setSearchButtonDisabled(newSearchTerm.trim() === '');
+
+    // input'ta yapılan aramayı URL'de görünür hale getir
+    navigate(`/joblist?search=${encodeURIComponent(newSearchTerm)}`);
   }
 
   return (
@@ -88,9 +114,9 @@ function JobList() {
             Filtrele
           </button>
           <div className='dropdown-content'>
-            <a href='#\' onClick={() => handleFilterChange('title')}>İsme göre</a>
-            <a href='#\' onClick={() => handleFilterChange('new')}>Tarihe göre en yeni</a>
-            <a href='#\' onClick={() => handleFilterChange('old')}>Tarihe göre en eski</a>
+            <a href='#' onClick={() => handleFilterChange('title')}>İsme göre</a>
+            <a href='#' onClick={() => handleFilterChange('new')}>Tarihe göre en yeni</a>
+            <a href='#' onClick={() => handleFilterChange('old')}>Tarihe göre en eski</a>
           </div>
         </div>
       </header>
