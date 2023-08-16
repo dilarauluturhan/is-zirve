@@ -4,6 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media screen and (max-width: 650px) {
+  .search-bar .header {
+    font-size: 4rem;
+    margin-top: 7rem;
+  }
+  .search-bar .subheader {
+    font-size: 1.2rem;
+  }
+  .search-bar .search .search-input {
+    width: 20rem;
+  }
+}
 
 .header {
   text-align: center;

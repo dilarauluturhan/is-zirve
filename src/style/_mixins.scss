@@ -398,3 +398,10 @@
         font-weight: 600;
     }
 }
+
+// Responsive
+@mixin mediaQuery($max) {
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}
