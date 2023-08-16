@@ -8,17 +8,20 @@ function SearchBar() {
 
     const [value, setValue] = useState('');
     const [showMore, setShowMore] = useState(false);
+    const [searchButtonDisabled, setSearchButtonDisabled] = useState(true); // buton durumu için state
 
     const onChange = (e) => {
-        setValue(e.target.value);
+        const inputValue = e.target.value;
+        setValue(inputValue);
         // input değeri değiştiğinde showMore durumunu güncelle
-        setShowMore(e.target.value.trim() !== '');
+        setShowMore(inputValue.trim() !== '');
+        setSearchButtonDisabled(inputValue.trim() === ''); // Input değeri boşsa butonu devre dışı bırak
     }
 
     const onSearch = (searchTerm) => {
         setValue(searchTerm); // çıkan meskeğe tıkladığımda input'ta aradığım kelimeyi tamamlıyor
         setShowMore(true);
-
+        setSearchButtonDisabled(false); // Butonu aktif hale getir
         navigate(`/joblist?search=${searchTerm}`);
     }
 
@@ -78,7 +81,11 @@ function SearchBar() {
                             onChange={onChange}
                             placeholder='İş bul...'
                         />
-                        <button onClick={() => onSearch(value)} className='search-button'>
+                        <button 
+                        onClick={() => onSearch(value)} 
+                        className='search-button'
+                        disabled={searchButtonDisabled}
+                        >
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
