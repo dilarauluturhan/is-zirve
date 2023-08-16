@@ -13,4 +13,107 @@
     @include dropdown;
 
     @include job-list;
+
+}
+
+@include mediaQuery(1500px) {
+    .job-list {
+        main {
+            div {
+                position: relative;
+                right: 7rem;
+
+                div {
+                    .job-info {
+                        width: 35rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include mediaQuery(900px) {
+    .job-list {
+        .head {
+            .job-head {
+                font-size: 2.5rem;
+                position: relative;
+                left: -50px;
+            }
+
+            input {
+                width: 32rem;
+            }
+        }
+
+        .dropdown {
+            position: relative;
+            left: 75%;
+            top: 4.7rem;
+        }
+
+        main {
+            div {
+                position: relative;
+                right: 9rem;
+                top: -25px;
+
+                div {
+                    .job-info {
+                        width: 22rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuery(420px) {
+    .job-list {
+        .head {
+            .job-head {
+                font-size: 1.5rem;
+                position: relative;
+                left: -20px;
+            }
+
+            input {
+                width: 10rem;
+                height: 1rem;
+            }
+
+            .search-button {
+                width: 3rem;
+                height: 2.3rem;
+            }
+        }
+
+        main {
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                right: 17rem;
+                top: -10px;
+
+                div {
+                    .job-info {
+                        width: 15rem;
+                        height: 2.5rem;
+                        
+                        li {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            display: none;
+        }
+    }
 }
