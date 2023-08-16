@@ -18,7 +18,7 @@
   .search-bar .job-info {
     width: 21rem;
     position: relative;
-    left: 6.3rem;
+    left: 10px;
     height: 2rem;
   }
   .search-bar .more {
@@ -26,7 +26,7 @@
     width: 6.5rem;
     height: 2.5rem;
     position: relative;
-    left: 15rem;
+    left: 10rem;
   }
 }
 
