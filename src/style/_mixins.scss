@@ -1,0 +1,400 @@
+// SearchBar mixin
+@mixin search {
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .search-input {
+            font-size: $font-size-input;
+            line-height: 28px;
+            padding: 8px 16px;
+            width: 30rem;
+            height: 1.7rem;
+            border-radius: 7px;
+            outline-color: $color-input-outline;
+            background-color: $color-input-background;
+            box-shadow: $color-input-shadow;
+        }
+
+        .search-button {
+            width: 3.5rem;
+            height: 3rem;
+            border-radius: 7px;
+            color: $color-white;
+            font-size: $font-size-search-button;
+            font-weight: 700;
+            background-color: $color-base;
+            cursor: pointer;
+            margin-left: 5px;
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-base;
+                font-size: $font-size-li;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@mixin job-info {
+    .job-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        border: 1px solid $box-background--gray100;
+        border-radius: 7px;
+        width: 33.5rem;
+        padding: 1rem;
+        position: relative;
+        left: 35%;
+        font-size: 1.1rem;
+
+        li {
+            flex: 1;
+        }
+
+        .job-city {
+            text-align: center;
+        }
+
+        .job-date {
+            text-align: right;
+        }
+    }
+}
+
+@mixin more-button {
+    .more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $font-size-morejobs-button;
+        color: $color-base;
+        text-decoration: none;
+        border: 1px solid $color-base;
+        border-radius: 7px;
+        width: 8rem;
+        height: 3rem;
+        position: relative;
+        left: 47%;
+
+        &:hover {
+            background-color: $color-base;
+            color: $color-white;
+        }
+    }
+}
+
+@mixin loginbackgorund {
+    .loginbackground {
+        min-height: 692px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        overflow: hidden;
+    }
+}
+
+@mixin header {
+    .flex-flex {
+        display: flex;
+    }
+
+    .flex-direction--column {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .loginbackground-gridContainer {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[16] [left-gutter] 1fr [end];
+        grid-template-columns: [start] 1fr [left-gutter] repeat(16, 86.6px) [left-gutter] 1fr [end];
+        -ms-grid-rows: [top] 1fr [top-gutter] (64px)[8] [bottom-gutter] 1fr [bottom];
+        grid-template-rows: [top] 1fr [top-gutter] repeat(8, 64px) [bottom-gutter] 1fr [bottom];
+        justify-content: center;
+        margin: 0 -2%;
+        transform: rotate(-12deg) skew(-12deg);
+    }
+
+    .box-divider--light-all-2 {
+        box-shadow: inset 0 0 0 2px $box-divider--light-all-2;
+    }
+
+    .box-background--blue {
+        background-color: $box-background--blue;
+    }
+
+    .box-background--white {
+        background-color: $color-white;
+    }
+
+    .box-background--blue800 {
+        background-color: $box-background--blue800;
+    }
+
+    .box-background--gray100 {
+        background-color: $box-background--gray100;
+    }
+
+    .padding-top--64 {
+        padding-top: $padding-top--64;
+    }
+
+    .padding-top--24 {
+        padding-top: $padding-top--24;
+    }
+
+    .padding-top--48 {
+        padding-top: $padding-top--48;
+    }
+
+    .padding-bottom--24 {
+        padding-bottom: $padding-bottom--24;
+    }
+
+    .padding-horizontal--48 {
+        padding: $padding-horizontal--48;
+    }
+
+    .padding-bottom--15 {
+        padding-bottom: $padding-bottom--15;
+    }
+
+    .flex-justifyContent--center {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .animationRightLeft {
+        animation: animationRightLeft 2s ease-in-out infinite;
+    }
+
+    .animationLeftRight {
+        animation: animationLeftRight 2s ease-in-out infinite;
+    }
+
+    .tans3s {
+        animation: animationLeftRight 3s ease-in-out infinite;
+    }
+
+    .tans4s {
+        animation: animationLeftRight 4s ease-in-out infinite;
+    }
+
+    @keyframes animationLeftRight {
+        0% {
+            transform: translateX(0px);
+        }
+
+        50% {
+            transform: translateX(1000px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes animationRightLeft {
+        0% {
+            transform: translateX(0px);
+        }
+
+        50% {
+            transform: translateX(-1000px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+// JobList mixin
+@mixin head {
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .job-head {
+            text-decoration: none;
+            color: $color-base;
+            font-size: $font-size-h1;
+            font-weight: 900;
+            position: relative;
+            right: 10%;
+        }
+
+        input {
+            font-size: $font-size-input;
+            padding: 8px 16px;
+            width: 45rem;
+            height: 1.7rem;
+            border-radius: 7px;
+            outline-color: $color-input-outline;
+            background-color: $color-input-background;
+            box-shadow: $color-input-shadow;
+            line-height: 28px;
+            position: relative;
+            right: 5%;
+        }
+
+        .search-button {
+            width: 3.5rem;
+            height: 3rem;
+            border-radius: 7px;
+            background-color: $color-base;
+            color: $color-white;
+            font-size: $font-size-search-button;
+            font-weight: 700;
+            cursor: pointer;
+            position: relative;
+            right: 4%;
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-base;
+                font-size: $font-size-li;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@mixin dropdown {
+    .dropdown {
+        position: absolute;
+        right: 20%;
+        top: 11.1rem;
+        transform: translateY(-50%);
+
+        &:hover {
+            .dropdown-content {
+                display: block;
+            }
+
+            .drop-button {
+                color: $box-background--blue;
+            }
+        }
+
+        .drop-button {
+            border: 2px solid $color-base;
+            border-radius: 7px;
+            background-color: $color-white;
+            color: $color-base;
+            width: 7rem;
+            height: 3rem;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: ease-out 0.3s;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: $color-white;
+            color: $color-base;
+            border: 2px solid $color-base;
+            border-radius: 7px;
+            width: 12rem;
+            height: 12.2rem;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin-top: 1px;
+
+            a {
+                color: $color-base;
+                font-size: 1.1rem;
+                font-weight: 600;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                transition: ease-in 0.3s;
+
+                &:hover {
+                    color: $box-background--blue;
+                }
+            }
+        }
+    }
+}
+
+@mixin job-list {
+    .job-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        border: 1px solid $box-background--gray100;
+        border-radius: 7px;
+        width: 50rem;
+        padding: 1rem;
+        position: relative;
+        top: 2rem;
+        left: 34rem;
+
+        li {
+            flex: 1;
+            cursor: pointer;
+            font-size: $font-size-li;
+        }
+
+        .job-city {
+            text-align: center;
+        }
+
+        .job-date {
+            text-align: right;
+        }
+    }
+}
+
+// Pagination mixin
+@mixin page {
+    .page {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $color-base;
+        margin-right: 9px;
+    }
+}
+
+@mixin page-number {
+    .page-number {
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: $color-base;
+        color: $color-white;
+        border: none;
+        border-radius: 50px;
+        width: 2.2rem;
+        height: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 9px;
+    }
+}
+
+@mixin page-item {
+    .page-item {
+        color: $color-base;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}

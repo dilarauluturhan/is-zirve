@@ -1,4 +1,5 @@
-@import '_variables';
+@import '_variables.scss';
+@import '_mixins.scss';
 
 .job-list {
     margin: 0;
@@ -7,140 +8,9 @@
     background-color: $color-white;
     margin-top: 1rem;
 
-    .head {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2rem;
+    @include head;
 
-        .job-head {
-            text-decoration: none;
-            color: $color-base;
-            font-size: $font-size-h1;
-            font-weight: 900;
-            position: relative;
-            right: 10%;
-        }
+    @include dropdown;
 
-        input {
-            font-size: $font-size-input;
-            padding: 8px 16px;
-            width: 45rem;
-            height: 1.7rem;
-            border-radius: 7px;
-            outline-color: $color-input-outline;
-            background-color: $color-input-background;
-            box-shadow: $color-input-shadow;
-            line-height: 28px;
-            position: relative;
-            right: 5%;
-        }
-
-        .search-button {
-            width: 3.5rem;
-            height: 3rem;
-            border-radius: 7px;
-            background-color: $color-base;
-            color: $color-white;
-            font-size: $font-size-search-button;
-            font-weight: 700;
-            cursor: pointer;
-            position: relative;
-            right: 4%;
-
-            &:hover {
-                background-color: $color-white;
-                color: $color-base;
-                font-size: $font-size-li;
-                font-weight: 700;
-            }
-        }
-    }
-
-    .dropdown {
-        position: absolute;
-        right: 20%;
-        top: 11.1rem;
-        transform: translateY(-50%);
-
-        &:hover {
-            .dropdown-content {
-                display: block;
-            }
-
-            .drop-button {
-                color: $box-background--blue;
-            }
-        }
-
-        .drop-button {
-            border: 2px solid $color-base;
-            border-radius: 7px;
-            background-color: $color-white;
-            color: $color-base;
-            width: 7rem;
-            height: 3rem;
-            cursor: pointer;
-            font-size: 1.3rem;
-            font-weight: 600;
-            transition: ease-out 0.3s;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: $color-white;
-            color: $color-base;
-            border: 2px solid $color-base;
-            border-radius: 7px;
-            width: 12rem;
-            height: 12rem;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            margin-top: 1px;
-
-            a {
-                color: $color-base;
-                font-size: 1.1rem;
-                font-weight: 600;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                transition: ease-in 0.3s;
-
-                &:hover {
-                    color: $box-background--blue;
-                }
-            }
-        }
-    }
-
-    .job-info {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        list-style: none;
-        border: 1px solid $box-background--gray100;
-        border-radius: 7px;
-        width: 50rem;
-        padding: 1rem;
-        position: relative;
-        top: 2rem;
-        left: 34rem;
-
-
-        li {
-            flex: 1;
-            cursor: pointer;
-            font-size: $font-size-li;
-        }
-
-        .job-city {
-            text-align: center;
-        }
-
-        .job-date {
-            text-align: right;
-        }
-    }
+    @include job-list;
 }

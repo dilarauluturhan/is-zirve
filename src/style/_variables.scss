@@ -2,13 +2,21 @@
 
 $font-primary: 'Nunito', sans-serif;
 
+// size
 $font-size-h1: 50px;
 $font-size-header: 8rem;
 $font-size-input: 1rem;
 $font-size-li: 1.3rem;
 $font-size-search-button: 1.3rem;
 $font-size-morejobs-button: 1.2rem;
+$padding-top--24: 24px;
+$padding-top--48: 48px;
+$padding-top--64: 64px;
+$padding-bottom--24: 24px;
+$padding-horizontal--48: 48px;
+$padding-bottom--15: 15px;
 
+// color
 $color-base: #22333c;
 $color-white: #ffffff;
 $color-input-outline: rgb(84 105 212 / 0.5);
@@ -32,10 +40,3 @@ $box-divider--light-all-2: #e3e8ee;
 $box-background--blue: #5469d4;
 $box-background--blue800: #212d63;
 $box-background--gray100: #e3e8ee;
-
-$padding-top--24: 24px;
-$padding-top--48: 48px;
-$padding-top--64: 64px;
-$padding-bottom--24: 24px;
-$padding-horizontal--48: 48px;
-$padding-bottom--15: 15px;
