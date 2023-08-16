@@ -91,6 +91,18 @@ function JobList() {
     navigate(`/joblist?search=${encodeURIComponent(newSearchTerm)}`);
   }
 
+  const handleFilterReset = () => {
+    // filtreyi ve arama terimini sıfırla
+    setFilter('');
+    setSearchTerm('');
+
+    // URL'deki sorgu parametrelerini güncelle veya kaldır
+    setSearchParams({});
+
+    // sayfayı yeniden yükle
+    window.location.reload();
+  }
+
   return (
     <div className='job-list'>
       <header>
@@ -117,6 +129,7 @@ function JobList() {
             <a href='#' onClick={() => handleFilterChange('title')}>İsme göre</a>
             <a href='#' onClick={() => handleFilterChange('new')}>Tarihe göre en yeni</a>
             <a href='#' onClick={() => handleFilterChange('old')}>Tarihe göre en eski</a>
+            <a href='#' onClick={() => handleFilterReset()}>Filtreyi sıfırla</a>
           </div>
         </div>
       </header>
